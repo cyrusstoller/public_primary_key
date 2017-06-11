@@ -6,6 +6,9 @@ This gem makes it easy to continue using an integer primary key internally in yo
 while displaying a more obscure public primary key that does not give clues to the size of
 your database to your users.
 
+This project was inspired by Tom Harrison's
+[blog post](https://tomharrisonjr.com/uuid-or-guid-as-primary-keys-be-careful-7b2aa3dcb439).
+
 ## Installation
 
 Add this line to your application's Gemfile:
