@@ -1,4 +1,4 @@
-# PublicPrimaryKey
+# PublicPrimaryKey [![Build Status](https://travis-ci.org/cyrusstoller/public_primary_key.svg?branch=master)](https://travis-ci.org/cyrusstoller/public_primary_key)
 
 It's often advantageous to use integer primary keys,
 but it may be disadvantageous to expose the size of your database to open internet.
@@ -39,6 +39,8 @@ For now, this gem only supports ActiveRecord.
 
 ```ruby
 class Post < ApplicatonRecord
+  # If you're not using Rails, you'll need to add the following line to each model:
+  # extend PublicPrimaryKey::ActiveRecordMixin
   public_primary_key :hash_id
 end
 ```
